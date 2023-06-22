@@ -11241,7 +11241,10 @@ aside.show {
   }
   .menu-openner{
     display: flex;
-  }
+    margin-left: -10px;
+    justify-content: center;
+   padding-bottom: 5px;
+}
 }
 @media(min-width:1300px){
   .bg-dark-px-5 h2, p{
