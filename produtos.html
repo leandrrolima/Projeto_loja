@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Magnolia Pratas</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/Imagens/diamante.png" />
+    <!-- Bootstrap icons-->
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="assets/dist/css/cart.css" />
+
+</head>
+
+<body>
+    <main>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container px-5">
+                <a class="navbar-brand" href="index.html">Magnolia Pratas</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">Sobre nós</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                        <li>
+                            <div class="menu-openner"><span>0</span>🛒</div>
+                        </li>
+
+
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- modelos de prata na lista e no carrinho -->
+        <div class="models">
+
+            <!-- prata na lista -->
+            <div class="prata-item">
+                <a href="">
+                    <div class="prata-item--img"><img src="" /></div>
+                    <div class="prata-item--add">+</div>
+                </a>
+                <div class="prata-item--price">R$ --</div>
+                <div class="prata-item--name"></div>
+                <div class="prata-item--desc">--</div>
+            </div>
+
+            <!-- prata no carrinho -->
+            <div class="cart--item">
+                <img src="" />
+                <div class="cart--item-nome">--</div>
+                <div class="cart--item--qtarea">
+                    <button class="cart--item-qtmenos">-</button>
+                    <div class="cart--item--qt">1</div>
+                    <button class="cart--item-qtmais">+</button>
+                </div>
+            </div>
+
+        </div>
+        <!-- /models -->
+
+        <!-- .menu-openner aparecera no modo mobile -->
+
+        <!-- /menu-openner -->
+        <header>
+
+            <div class="menu-openner"><span>0</span>🛒</div>
+        </header>
+        <!-- conteudo principal -->
+
+
+        <h2> Nossos Produtos</h2>
+
+        <div class="prata-area"></div>
+
+        <!-- /conteudo principal -->
+
+        <!-- aside do carrinho -->
+        <aside>
+            <div class="cart--area">
+                <div class="menu-closer">x</div>
+                <h1>Suas pratas</h1>
+                <div class="cart"></div>
+                <div class="cart--details">
+                    <div class="cart--totalitem subtotal">
+                        <span>Subtotal</span>
+                        <span>R$ --</span>
+                    </div>
+                    <div class="cart--totalitem desconto">
+                        <span>Desconto</span>
+                        <span>R$ --</span>
+                    </div>
+                    <div class="cart--totalitem total big">
+                        <span>Total</span>
+                        <span>R$ --</span>
+                    </div>
+                    <div class="cart--finalizar">Finalizar a compra</div>
+                </div>
+            </div>
+        </aside>
+        <!-- /aside do carrinho -->
+
+        <!-- janela modal .prataWindowArea -->
+        <div class="prataWindowArea">
+            <div class="prataWindowBody">
+                <div class="prataInfo--cancelMobileButton">Voltar</div>
+                <div class="prataBig">
+                    <img src="" />
+                </div>
+                <div class="prataInfo">
+                    <h1>--</h1>
+                    <div class="prataInfo--desc">--</div>
+                    <div class="prataInfo--sizearea">
+                        <div class="prataInfo--sector"></div>
+                        <div class="prataInfo--sizes">
+                            <div data-key="P" class="prataInfo--size"><span>--</span></div>
+                            <div data-key="M" class="prataInfo--size"><span>--</span></div>
+                            <div data-key="G" class="prataInfo--size selected"> <span>--</span></div>
+                        </div>
+                    </div>
+                    <div class="prataInfo--pricearea">
+                        <div class="prataInfo--sector">Preço</div>
+                        <div class="prataInfo--price">
+                            <div class="prataInfo--actualPrice">R$ --</div>
+                            <div class="prataInfo--qtarea">
+                                <button class="prataInfo--qtmenos">-</button>
+                                <div class="prataInfo--qt">1</div>
+                                <button class="prataInfo--qtmais">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prataInfo--addButton">Adicionar ao carrinho</div>
+                    <div class="prataInfo--cancelButton">Cancelar</div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto">
+                        <div class="small m-0 text-white">Copyright &copy; Magnolia Pratas</div>
+                    </div>
+                    <div class="col-auto">
+
+                        <span class="text-white mx-1"></span>
+                        <a class="link-light small" href="faq.html">Contatos</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /janela modal .prataWindowArea -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="pratas.js"></script>
+        <script src="assets/dist/js/scripts.js"></script>
+
+</body>
+
+</html>

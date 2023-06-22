@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css?family=Hepta+Slab:400,700|Lato:400,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EEE;
+    font-family: 'Lato', Helvetica, Arial;
+    font-size: 15px;
+    display: flex;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.models {
+    display: none;
+}
+
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 60px;
+    background-color: #ffffff;
+    display: none;
+    /* none; */
+    justify-content: space-between;
+    /* flex-end; */
+    align-items: center;
+}
+
+header h1 {
+    margin-left: 1rem;
+    color: #fff;
+}
+
+.menu-openner {
+    width: 55px;
+    height: 35px;
+    margin-right: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-top: 1px;
+    padding-left: 0px;
+    font-size: 1rem;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu-openner span {
+    margin-right: 2px;
+}
+
+.menu-closer {
+    width: 32px;
+    height: 32px;
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+aside {
+    display: none;
+    background-color: #cccccc;
+    width: 0vw;
+    font-family: 'Hepta Slab', Helvetica, Arial;
+    transition: all ease .2s;
+    overflow-x: hidden;
+}
+
+aside.show {
+    display: flex;
+    justify-content: center;
+    width: 31%;
+    height: 157.6vh;
+}
+
+.cart--area {
+    margin-top: 30px;
+    /* ajuste */
+    padding: 20px;
+}
+
+.cart--area h1 {
+    display: relative;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+h1,
+h2 {
+    font-family: 'Hepta Slab', Helvetica, Arial;
+    text-align: center;
+}
+
+.prata-area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.prata-item {
+    text-align: center;
+    max-width: 250px;
+    font-family: 'Hepta Slab', Helvetica, Arial;
+    margin: 0 auto 50px auto;
+
+}
+
+.prata-item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10%;
+}
+
+.prata-item--img {
+    width: 340px;
+    height: 140px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.39);
+    border-radius: 30%;
+}
+
+.prata-item--img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+}
+
+.prata-item--add {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #0c0c0c;
+    text-align: center;
+    color: #FFF;
+    font-size: 22px;
+    cursor: pointer;
+    margin-top: 70px;
+    transition: all ease .2s;
+}
+
+.prata-item a:hover .prata-item--add {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.prata-item--price {
+    font-size: 15px;
+    color: #333;
+    margin-top: 5px;
+}
+
+.prata-item--name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-top: 5px;
+}
+
+.prata-item--desc {
+    font-size: 13px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.prataWindowArea {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+    transition: all ease .5s;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.prataWindowBody {
+    width: 900px;
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #999;
+    display: flex;
+    margin: 20px 0px;
+}
+
+.prataBig {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prataBig--back {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+}
+
+.prataBig img {
+    height: 400px;
+    width: auto;
+}
+
+.prataInfo {
+    flex: 1;
+    font-family: 'Hepta Slab', Helvetica, Arial;
+    padding-bottom: 50px;
+}
+
+.prataInfo h1 {
+    margin-top: 50px;
+}
+
+.prataInfo .prataInfo--desc {
+    font-size: 15px;
+    color: #999;
+    margin-top: 10px;
+    font-family: 'Lato', Helvetica, Arial;
+}
+
+.prataInfo--sector {
+    color: #CCC;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.prataInfo--sizes {
+    display: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.prataInfo--size {
+    padding: 10px 15px;
+    color: #000;
+    background-color: #EEE;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.prataInfo--size:hover {
+    background-color: #CCC;
+}
+
+.prataInfo--size.selected {
+    background-color: #d32f2f;
+    color: #FFF;
+}
+
+.prataInfo--size.selected span {
+    color: #D6D6D6;
+}
+
+.prataInfo--size span {
+    font-size: 12px;
+    color: #999;
+    font-weight: normal;
+}
+
+.prataInfo--price {
+    display: flex;
+    align-items: center;
+}
+
+.prataInfo--actualPrice {
+    font-size: 28px;
+    margin-right: 30px;
+}
+
+.prataInfo--qtarea {
+    display: inline-flex;
+    background-color: #EEE;
+    border-radius: 10px;
+    height: 30px;
+}
+
+.prataInfo--qtarea button {
+    border: 0;
+    background-color: transparent;
+    font-size: 17px;
+    outline: 0;
+    cursor: pointer;
+    padding: 0px 10px;
+    color: #333;
+}
+
+.prataInfo--qt {
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0px 5px;
+    color: #000;
+}
+
+.prataInfo--addButton {
+    margin-top: 30px;
+    padding: 20px 30px;
+    border-radius: 20px;
+    background-color: #000000;
+    color: #FFF;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.prataInfo--addButton:hover {
+    background-color: #797979;
+
+}
+
+.prataInfo--cancelButton {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.prataInfo--cancelMobileButton {
+    display: none;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.cart {
+    margin-bottom: 20px;
+}
+
+.cart--item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.cart--item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.cart--item-nome {
+    flex: 1;
+}
+
+.cart--item--qtarea {
+    display: inline-flex;
+    background-color: #EEE;
+    border-radius: 10px;
+    height: 30px;
+}
+
+.cart--item--qtarea button {
+    border: 0;
+    background-color: transparent;
+    font-size: 17px;
+    outline: 0;
+    cursor: pointer;
+    padding: 0px 10px;
+    color: #333;
+}
+
+.cart--item--qt {
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0px 5px;
+    color: #000;
+}
+
+.cart--totalitem {
+    padding: 15px 0;
+    border-top: 1px solid #030303;
+    color: #315970;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.cart--totalitem span:first-child {
+    font-weight: bold;
+}
+
+.cart--totalitem.big {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+}
+
+.cart--finalizar {
+    padding: 20px 30px;
+    border-radius: 20px;
+    background-color: #000000;
+    color: #FFF;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    border: 2px solid #f0f0f0;
+    transition: all ease .2s;
+}
+
+.cart--finalizar:hover {
+    background-color: #5d5e5d;
+}
+
+@media (max-width:1366px) {
+    .prata-area {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    h2{
+        padding-bottom: 2rem;
+    }
+
+    aside {
+        width: auto;
+        position: absolute;
+        left: 0;
+        right: 100;
+        top: 0;
+        bottom: 0;
+        transition: all ease .2s;
+    }
+
+    .menu-closer {
+        display: block;
+    }
+}
+
+@media (max-width:840px) {
+    body {
+        flex-direction: column;
+    }
+
+    .prata-area {
+        display: block;
+    }
+
+    .prata-item {
+        max-width: 100%;
+    }
+
+    header {
+        display: flex;
+    }
+
+    /*
+    main {
+        padding-top:60px;
+    }
+    */
+    aside {
+        width: auto;
+        position: fixed;
+        left: 100vw;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        transition: all ease .2s;
+    }
+
+    aside.show {
+        width: auto;
+
+    }
+
+    .cart--area {
+        width: 90vw;
+    }
+
+    .menu-closer {
+        display: block;
+    }
+
+    .prataWindowArea {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .prataWindowBody {
+        width: 100vw;
+        display: block;
+        padding: 20px;
+        border-radius: 0;
+        box-shadow: none;
+        margin: 0;
+    }
+
+    .prataBig img {
+        width: 75%;
+        height: auto;
+    }
+
+    .prataInfo h1 {
+        margin-top: 20px;
+    }
+
+    .prataInfo--qtarea {
+        height: 60px;
+    }
+
+    .prataInfo--qtarea button {
+        font-size: 25px;
+        padding: 0px 25px;
+    }
+
+    .prataInfo--qt {
+        line-height: 60px;
+        font-size: 20px;
+    }
+
+    .prataInfo--addButton {
+        font-size: 20px;
+        display: block;
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    .prataInfo--cancelButton {
+        display: flex;
+    }
+
+    .prataInfo--cancelMobileButton {
+        display: block;
+    }
+
+}
+
+@media (max-width:450px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .menu-openner {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:380px) {
+    header h1 {
+        font-size: 1rem;
+    }
+
+    .menu-openner {
+        font-size: 1.5rem;
+    }
+}
+
+#img-logo {
+    width: 50px;
+}
