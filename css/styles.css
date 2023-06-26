@@ -13099,7 +13099,7 @@ button.learn-more:active::before {
   background-color: white;
 }
 
-@media(max-width:768px) {
+@media(max-width:720px) {
   .menu-openner span {
     font-size: 10px;
   }
@@ -13270,6 +13270,6 @@ button.learn-more:active::before {
   }
 
   .menu-openner {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
