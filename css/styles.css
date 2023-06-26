@@ -4329,6 +4329,7 @@ fieldset:disabled .btn {
   padding-top: var(--bs-navbar-brand-padding-y);
   padding-bottom: var(--bs-navbar-brand-padding-y);
   margin-right: var(--bs-navbar-brand-margin-end);
+  font-weight: 900;
   font-size: var(--bs-navbar-brand-font-size);
   color: var(--bs-navbar-brand-color);
   text-decoration: none;
@@ -13034,6 +13035,7 @@ button {
 }
 
 button.learn-more {
+  display: none;
   margin-top: 25px;
   margin-bottom: 25px;
   font-weight: 600;
@@ -13098,10 +13100,19 @@ button.learn-more:active::before {
 .cart--finalizar:hover {
   background-color: white;
 }
+#fraseHeader {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
 
+}
 @media(max-width:720px) {
   
-  
+  button.learn-more {
+    display: inline-block;
+  }
   #fraseHeader {
     justify-content: center;
     align-items: center;

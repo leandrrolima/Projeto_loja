@@ -13,7 +13,7 @@ let prataJson = [
       {
         id: 2,
         name: 'Pulseira elo corações',
-        img: 'assets/Imagens/IMG-20230401-WA0034.jpg',
+        img: 'assets/Imagens/elo.jpg',
         price: [45.00, 45.00, 45.00],
         sizes: [
          
