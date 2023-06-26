@@ -13100,7 +13100,10 @@ button.learn-more:active::before {
 }
 
 @media(max-width:768px) {
-
+  .menu-openner span {
+    font-size: 10px;
+  }
+  
   #fraseHeader {
     justify-content: center;
     align-items: center;
