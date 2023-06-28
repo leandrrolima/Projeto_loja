@@ -2253,6 +2253,15 @@ progress {
   #myCarousel {
     display: none;
   }
+  
+  #fotosHeader {
+    display: none;
+  }
+
+  #sectionHeader {
+    display: none;
+
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -13158,6 +13167,7 @@ button.learn-more:active::before {
     margin-left: 30px;
   }
 }
+
 
 @media (max-width:1000px) {
   .prata-area {
